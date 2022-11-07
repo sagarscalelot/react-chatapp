@@ -9,8 +9,10 @@ const Conversation = () => {
     <Stack height={"100%"} maxHeight={"100vh"} width={"auto"}>
       {/* ChatsHeader */}
       <Header />
+      
       {/* Msg */}
       <Box width={"100%"} sx={{ flexGrow: 1 }}></Box>
+
       {/* Chat Footer */}
       <Footer/>
     </Stack>
