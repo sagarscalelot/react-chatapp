@@ -19,7 +19,7 @@ const Profile_Menu = [
     icon: <Gear />,
   },
   {
-    title: "Profile",
+    title: "Logout",
     icon: <SignOut />,
   },
 ];
@@ -50,8 +50,8 @@ const ChatList = [
   {
     id: 0,
     img: faker.image.avatar(),
-    name: faker.name.firstName(),
-    msg: faker.music.songName(),
+    name: "Sagar Kheni",
+    msg: "This is a reply msg...",
     time: "9:36",
     unread: 0,
     pinned: true,
@@ -60,8 +60,8 @@ const ChatList = [
   {
     id: 1,
     img: faker.image.avatar(),
-    name: faker.name.firstName(),
-    msg: faker.music.songName(),
+    name: 'Sahil Nayani',
+    msg: "Hello...",
     time: "12:02",
     unread: 2,
     pinned: true,
@@ -70,8 +70,8 @@ const ChatList = [
   {
     id: 2,
     img: faker.image.avatar(),
-    name: faker.name.firstName(),
-    msg: faker.music.songName(),
+    name:'Dhruvin Dankhara',
+    msg: "what's aap..",
     time: "10:35",
     unread: 3,
     pinned: false,
@@ -192,7 +192,7 @@ const Chat_History = [
   {
     type: "msg",
     subtype: "reply",
-    reply: "This is a reply",
+    reply: "This is a reply msg...",
     message: "Yep, I can also do that",
     incoming: false,
     outgoing: true,

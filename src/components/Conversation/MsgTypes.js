@@ -13,6 +13,7 @@ import { useTheme } from "@mui/material/styles";
 import { DotsThreeVertical, DownloadSimple, Image } from "phosphor-react";
 import  {Message_options} from "../../data";
 import { useState } from "react";
+import img from "../../assets/Images/abstract.jpg"
 
 const DocMsg = ({ el }) => {
   const theme = useTheme();
@@ -40,7 +41,7 @@ const DocMsg = ({ el }) => {
             }}
           >
             <Image size={48} />
-            <Typography variant="caption">Abstarct.png</Typography>
+            <Typography variant="caption">Abstarct.jpg</Typography>
             <IconButton>
               <DownloadSimple />
             </IconButton>
@@ -82,7 +83,7 @@ const LinkMsg = ({ el }) => {
             }}
           >
             <img
-              src={el.preview}
+              src={img}
               alt={el.message}
               style={{ maxHeight: 210, borderRadius: "10px" }}
             />
@@ -169,7 +170,7 @@ const MediaMsg = ({ el }) => {
       >
         <Stack spacing={1}>
           <img
-            src={el.img}
+            src={img}
             alt={el.message}
             style={{ maxHeight: 210, borderRadius: "10px" }}
           />

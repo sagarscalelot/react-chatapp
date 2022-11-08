@@ -1,5 +1,4 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
 import { Avatar, Box,  Stack, Typography, IconButton, Divider,
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
