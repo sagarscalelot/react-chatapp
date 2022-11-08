@@ -5,6 +5,7 @@ import { Avatar, Box,  Stack, Typography, IconButton, Divider,
 import { useTheme } from "@mui/material/styles";
 import {  Phone,  MagnifyingGlass,  VideoCamera,  CaretDown, } from "phosphor-react";
 import StyledBadge from "../StyleBadge";
+import myImg from "../../assets/Images/2.png"
 
 const Header = () => {
   const theme = useTheme();
@@ -33,7 +34,7 @@ const Header = () => {
             anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
             variant="dot"
           >
-            <Avatar alt={"Sagar"} src={faker.image.avatar()} />
+            <Avatar alt={"Sagar"} src={myImg} />
           </StyledBadge>
         </Box>
         <Stack spacing={0.2}>
