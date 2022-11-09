@@ -15,6 +15,7 @@ import { styled, alpha, useTheme } from "@mui/material/styles";
 import { faker } from "@faker-js/faker";
 import { ChatList } from "../../data";
 import { SimpleBarStyle } from "../../components/Scrollbar";
+import '../../app.css'
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
@@ -135,7 +136,7 @@ const Chats = () => {
         boxShadow: "0px 0px 2px rgba(0,0,0,0.25)",
       }}
     >
-      <Stack p={2} spacing={2} sx={{ height: "100vh" }}>
+      <Stack p={1} spacing={2} sx={{ height: "100vh" }}>
         <Stack
           direction="row"
           alignItems={"center"}
