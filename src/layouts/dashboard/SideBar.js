@@ -100,6 +100,7 @@ const SideBar = () => {
                 </IconButton>
               )
             )}
+
             <Divider sx={{ width: "48px" }} />
             {selected === 3 ? (
               <Box
@@ -155,12 +156,12 @@ const SideBar = () => {
               "aria-labelledby": "basic-button",
             }}
             anchorOrigin={{
-              vertical:"bottom",
-              horizontal:"right"
+              vertical: "bottom",
+              horizontal: "right",
             }}
             transformOrigin={{
-              vertical:"bottom",
-              horizontal:"left"
+              vertical: "bottom",
+              horizontal: "left",
             }}
           >
             <Stack spacing={1} px={1}>

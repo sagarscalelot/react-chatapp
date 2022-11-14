@@ -46,36 +46,6 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
   },
 })); 
 
-const MessageRead = styled(Badge)(({ theme }) => ({
-  "& .MuiBadge-badge": {
-    backgroundColor: "primary",
-    color: "primary",
-    boxShadow: `0 0 0 1px ${theme.palette.background.main}`,
-    "&::after": {
-      position: "absolute",
-      top: 0,
-      left: 0,
-      width: "100%",
-      height: "100%",
-      borderRadius: "50%",
-      zIndex: -1,
-      animation: "sagar 1.2s infinite ease-in-out",
-      border: "1px solid currentColor",
-      content: '""',
-    },
-  },
-  "@keyframes sagar": {
-    "0%": {
-      color: "#fff",
-      transform: "scale(2)",
-      opacity: 1,
-    },
-    "100%": {
-      transform: "scale(2.8)",
-      opacity: 0,
-    },
-  },
-}));
 
 const ChatElement = ({ id, name, img, msg, time, unread, online }) => {
   const theme = useTheme();
@@ -122,13 +92,13 @@ const ChatElement = ({ id, name, img, msg, time, unread, online }) => {
           {/* <Badge color="primary" badgeContent={unread}></Badge> */}
 
           {unread ? (
-            <MessageRead
+            <Stack
               overlap="circular"
               anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
               variant="dot"
             >
               <Badge color="primary" badgeContent={unread}></Badge>
-            </MessageRead>
+            </Stack>
           ) : (
             <Badge color="primary" badgeContent={unread}></Badge>
           )}
@@ -181,7 +151,7 @@ const Chats = () => {
       }}
     >
      
-        <Stack p={1} spacing={2} sx={{ height: "100vh" }}>
+        <Stack p={2} spacing={2} sx={{ maxHeight: "100vh" }}>
           <Stack
             direction="row"
             alignItems={"center"}
